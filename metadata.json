@@ -1,0 +1,6 @@
+{
+  "name": "Compare Anything",
+  "description": "High-precision text and code comparison utility with side-by-side split diff, syntax view, saved snapshots, history tracks, and configurations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
