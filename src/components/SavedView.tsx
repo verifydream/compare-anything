@@ -38,7 +38,7 @@ export default function SavedView({
             placeholder="Search saved items..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full md:w-64 bg-[#141414] border border-[#222222] rounded-xl pl-10 pr-4 py-2 text-xs text-[#f1f5f9] placeholder-gray-600 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-505 transition-all font-sans"
+            className="w-full md:w-64 bg-[#141414] border border-[#222222] rounded-xl pl-10 pr-4 py-2 text-xs text-[#f1f5f9] placeholder-gray-600 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all font-sans"
           />
           <Search className="w-4 h-4 text-gray-400 absolute left-3 top-2.5 pointer-events-none" />
         </div>
@@ -138,7 +138,7 @@ export default function SavedView({
             <Plus className="w-5 h-5" />
           </div>
           <h4 className="text-sm font-bold text-[#f1f5f9] font-sans mb-1 group-hover:text-indigo-400 transition-all">New Snapshot</h4>
-          <p className="text-xs text-gray-505 text-gray-400 max-w-[210px] font-sans">Save currently active workspace compare arrays directly here.</p>
+          <p className="text-xs text-gray-400 max-w-[210px] font-sans">Save currently active workspace compare arrays directly here.</p>
         </div>
       </div>
 

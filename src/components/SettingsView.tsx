@@ -212,7 +212,7 @@ export default function SettingsView({
                 <button 
                   id="btn-save-profile"
                   type="submit"
-                  className="px-6 py-2.5 bg-indigo-600 text-white font-bold rounded-xl text-xs hover:bg-indigo-550 hover:bg-indigo-500 active:scale-95 transition-all cursor-pointer shadow-lg shadow-indigo-650 shadow-indigo-600/15"
+                  className="px-6 py-2.5 bg-indigo-600 text-white font-bold rounded-xl text-xs hover:bg-indigo-500 active:scale-95 transition-all cursor-pointer shadow-lg shadow-indigo-600/15"
                 >
                   Save Changes
                 </button>
@@ -384,7 +384,7 @@ export default function SettingsView({
               <div className="pt-6 border-t border-[#222222]">
                 <div className="bg-rose-500/5 border border-rose-500/20 rounded-[20px] p-5 md:p-6 shadow-inner">
                   <div className="flex items-start gap-4">
-                    <div className="p-3 bg-rose-550 bg-rose-950 text-rose-300 rounded-full select-none border border-rose-500/10">
+                    <div className="p-3 bg-rose-950 text-rose-300 rounded-full select-none border border-rose-500/10">
                       <AlertTriangle className="w-5 h-5 animate-pulse" />
                     </div>
                     <div className="flex-1 space-y-2">
