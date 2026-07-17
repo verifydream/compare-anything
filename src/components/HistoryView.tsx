@@ -45,7 +45,7 @@ export default function HistoryView({
             placeholder="Search history..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full md:w-64 bg-[#141414] border border-[#222222] rounded-xl pl-10 pr-4 py-2 text-xs text-[#f1f5f9] placeholder-gray-600 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-505 transition-all font-sans"
+            className="w-full md:w-64 bg-[#141414] border border-[#222222] rounded-xl pl-10 pr-4 py-2 text-xs text-[#f1f5f9] placeholder-gray-600 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all font-sans"
           />
           <Search className="w-4 h-4 text-gray-400 absolute left-3 top-2.5 pointer-events-none" />
         </div>
@@ -55,7 +55,7 @@ export default function HistoryView({
         <div className="py-16 text-center bg-[#141414]/40 border border-dashed border-[#222222] rounded-[24px] flex flex-col items-center justify-center">
           <Info className="w-10 h-10 text-gray-400 mb-3" />
           <h3 className="text-sm font-semibold text-[#f1f5f9] font-sans">No history items found</h3>
-          <p className="text-xs text-gray-450 text-gray-400 mt-1 font-sans">Try modifying your query or run comparisons to generate log trails.</p>
+          <p className="text-xs text-gray-400 mt-1 font-sans">Try modifying your query or run comparisons to generate log trails.</p>
         </div>
       ) : (
         categories.map(cat => {
@@ -85,7 +85,7 @@ export default function HistoryView({
                       {/* Left: Info */}
                       <div className="flex-1 min-w-0 space-y-3">
                         <div className="flex items-center gap-3">
-                          <span className="px-2 py-0.5 bg-[#0A0A0A] text-indigo-405 text-indigo-400 font-mono text-[10px] rounded border border-[#222222] uppercase tracking-wider font-bold">
+                          <span className="px-2 py-0.5 bg-[#0A0A0A] text-indigo-400 font-mono text-[10px] rounded border border-[#222222] uppercase tracking-wider font-bold">
                             {item.language}
                           </span>
                           <span className="text-xs text-gray-400 font-sans font-medium">
@@ -95,8 +95,8 @@ export default function HistoryView({
 
                         {/* Inline Code Preview snippet */}
                         <div className="font-mono text-[11px] text-gray-400 bg-[#0A0A0A]/60 p-3 rounded-xl border border-[#222222]/40 overflow-x-auto truncate leading-5 select-none text-left">
-                          <div className="text-rose-455 text-[#ef4444] opacity-80">- Original text context</div>
-                          <div className="text-emerald-455 text-[#22c55e] opacity-80">+ Modified text changes</div>
+                          <div className="text-[#ef4444] opacity-80">- Original text context</div>
+                          <div className="text-[#22c55e] opacity-80">+ Modified text changes</div>
                         </div>
                       </div>
 
@@ -137,7 +137,7 @@ export default function HistoryView({
 
       {/* Global Action note at footer */}
       <div className="pt-8 border-t border-[#222222] flex flex-col items-center justify-center gap-4 text-center">
-        <div className="flex items-center gap-2 text-xs text-gray-450 text-gray-400 italic opacity-75 font-sans">
+        <div className="flex items-center gap-2 text-xs text-gray-400 italic opacity-75 font-sans">
           <Info className="w-4 h-4 text-indigo-400" />
           History tracking is stored locally on your device for fast, offline access.
         </div>
@@ -148,7 +148,7 @@ export default function HistoryView({
               onClearHistory();
             }
           }}
-          className="flex items-center gap-2 px-6 py-2.5 border border-[#222222] rounded-xl text-xs text-rose-455 text-rose-400 hover:bg-rose-500/10 font-bold transition-all cursor-pointer font-sans"
+          className="flex items-center gap-2 px-6 py-2.5 border border-[#222222] rounded-xl text-xs text-rose-400 hover:bg-rose-500/10 font-bold transition-all cursor-pointer font-sans"
         >
           <Trash2 className="w-3.5 h-3.5" />
           Clear All History

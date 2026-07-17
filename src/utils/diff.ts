@@ -11,7 +11,22 @@ export interface DiffResult {
 }
 
 /**
- * Computes a side-by-side aligned line-level diff between original and modified text.
+ * Computes a side-by-side aligned line-level diff between original and modified text
+ * using the Longest Common Subsequence (LCS) dynamic programming algorithm.
+ *
+ * The algorithm builds a 2D table (`dp`) to find the longest sequence of lines
+ * that match between the `original` and `modified` text. It then backtracks
+ * through this table to determine the optimal sequence of match, insert, and
+ * delete operations to transform the original text into the modified text.
+ *
+ * @param original - The original string text to compare.
+ * @param modified - The modified string text to compare against the original.
+ * @param options - Configuration options for the diff algorithm.
+ * @param options.ignoreWhitespace - If true, strips all whitespace before comparing lines.
+ * @param options.caseInsensitive - If true, converts lines to lowercase before comparing.
+ * @returns A `DiffResult` object containing the aligned left (original) and
+ *          right (modified) lines with their diff types (normal, addition, deletion, spacer),
+ *          along with counts of added, removed, and modified lines.
  */
 export function computeDiff(
   original: string,

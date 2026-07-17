@@ -228,7 +228,7 @@ export default function CompareTool({
                 type="checkbox" 
                 checked={ignoreWhitespace}
                 onChange={(e) => setIgnoreWhitespace(e.target.checked)}
-                className="w-4 h-4 rounded border-[#222222] bg-[#0A0A0A] text-indigo-505 focus:ring-indigo-600 cursor-pointer text-indigo-500"
+                className="w-4 h-4 rounded border-[#222222] bg-[#0A0A0A] focus:ring-indigo-600 cursor-pointer text-indigo-500"
               />
               <span className="text-xs text-gray-400 group-hover:text-white transition-all font-sans">Ignore Whitespace</span>
             </label>
@@ -239,7 +239,7 @@ export default function CompareTool({
                 type="checkbox" 
                 checked={caseInsensitive}
                 onChange={(e) => setCaseInsensitive(e.target.checked)}
-                className="w-4 h-4 rounded border-[#222222] bg-[#0A0A0A] text-indigo-505 focus:ring-indigo-600 cursor-pointer text-indigo-500"
+                className="w-4 h-4 rounded border-[#222222] bg-[#0A0A0A] focus:ring-indigo-600 cursor-pointer text-indigo-500"
               />
               <span className="text-xs text-gray-400 group-hover:text-white transition-all font-sans">Case Insensitive</span>
             </label>
@@ -432,7 +432,7 @@ export default function CompareTool({
                 onClick={exportDiffAsFile}
                 className="flex items-center gap-1.5 border border-[#222222] hover:bg-[#1A1A1A] text-[#F5F5F5] px-3.5 py-1.5 rounded-xl text-xs font-semibold leading-tight transition-all font-sans cursor-pointer"
               >
-                <Download className="w-3.5 h-3.5 text-indigo-450 text-indigo-400" />
+                <Download className="w-3.5 h-3.5 text-indigo-400" />
                 {isExported ? 'Exported!' : 'Export Diff'}
               </button>
               <button 
@@ -440,7 +440,7 @@ export default function CompareTool({
                 onClick={copyUnifiedDiffText}
                 className="flex items-center gap-1.5 border border-[#222222] hover:bg-[#1A1A1A] text-[#F5F5F5] px-3.5 py-1.5 rounded-xl text-xs font-semibold leading-tight transition-all font-sans cursor-pointer"
               >
-                <Copy className="w-3.5 h-3.5 text-indigo-450 text-indigo-400" />
+                <Copy className="w-3.5 h-3.5 text-indigo-400" />
                 {isCopied ? 'Copied!' : 'Copy Unified'}
               </button>
             </div>
@@ -468,7 +468,7 @@ export default function CompareTool({
 
                   return (
                     <div key={idx} className={`flex leading-6 transition-all ${bgClass} w-full`}>
-                      <div className="py-0.5 pr-3 select-none text-right text-gray-605 text-gray-600 font-mono border-r border-[#222222]/30 min-w-[44px] bg-[#0A0A0A]/45">
+                      <div className="py-0.5 pr-3 select-none text-right text-gray-600 font-mono border-r border-[#222222]/30 min-w-[44px] bg-[#0A0A0A]/45">
                         {line.lineNumberLeft || ''}
                       </div>
                       <div className={`px-3 py-0.5 flex-grow truncate flex items-center min-h-[24px] ${textClass}`}>
@@ -499,7 +499,7 @@ export default function CompareTool({
 
                   return (
                     <div key={idx} className={`flex leading-6 transition-all ${bgClass} w-full`}>
-                      <div className="py-0.5 pr-3 select-none text-right text-gray-605 text-gray-600 font-mono border-r border-[#222222]/30 min-w-[44px] bg-[#0A0A0A]/45">
+                      <div className="py-0.5 pr-3 select-none text-right text-gray-600 font-mono border-r border-[#222222]/30 min-w-[44px] bg-[#0A0A0A]/45">
                         {line.lineNumberRight || ''}
                       </div>
                       <div className={`px-3 py-0.5 flex-grow truncate flex items-center min-h-[24px] ${textClass}`}>
